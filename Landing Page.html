@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Hero Screen - Muffins & Text</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .horizontal-nav {
+      background-color: rgba(73, 38, 12, 0.7);
+    }
+
+    .hero-image {
+      height: 100%;
+      width: 100%;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      vertical-align: bottom; /* remove whitespace below image */
+    }
+
+    h1 {
+      color: #8b3a04;
+      font-size: 64px;
+      font-weight: bold;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 15%;
+      left: 30%;
+    }
+
+    .footer-content {
+      width: 100%;
+      background-color: #8b3a04;
+    }
+
+    .hero-button {
+      position: absolute;
+      bottom: 10%;
+      right: 5%;
+      border-radius: 10px;
+      border: none;
+      background-color: #8b3a04;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- TODO: go assets/stylesheets/styles.css, look for the logo class and change the image -->
+    <a class="logo" href="index.html"></a>
+    <nav>
+      <div class="horizontal-nav">
+        <a class="active-menu-item" hrf="#">Splash</a>
+        <a href="page-2.html">page 2</a>
+        <a href="page-3.html">page 3</a>
+        <a href="page-4.html">page 4</a>
+        <a href="page-5.html">page 5</a>
+        <a href="page-6.html">page 6</a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+        <div class="dropdown-content">
+          <a class="active-menu-item" href="#">Splash</a>
+          <a href="page-2.html">page 2</a>
+          <a href="page-3.html">page 3</a>
+          <a href="page-4.html">page 4</a>
+          <a href="page-5.html">page 5</a>
+          <a href="page-6.html">page 6</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+    <img class="hero-image" src="./assets/images/muffins.jpg" />
+    <div class="hero-text">
+      <h1>Sorted Muffins...</h1>
+    </div>
+    <a href="https://google.com" target="_blank"><button class="hero-button">More Muffins</button></a>
+  </section>
+  <footer class="footer-content">
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg padding-right" style="color: #ffffff;"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg gpadding-right" style="color: #ffffff;"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg padding-right" style="color: #ffffff;"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg" style="color: #ffffff;"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
