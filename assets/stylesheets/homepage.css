@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Katibeh";
+    src: url("../fonts/Katibeh-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  }
+body {
+    font-family: "Poppins"
+}
+header {
+    height: 140px;
+    text-align: center;
+    margin: 20px; 
+}
+h1 {
+    padding-bottom: 5px;
+    padding-top:20px;
+    font-family: "katibeh";
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: -33px
+    
+}
+header a.logo {
+    transition: all 0.5s ease;
+    display: block;
+    width: 170px;
+    height: 100px;
+    /* change dish-01.png to your loge image */
+    background: url(../images/Logo@3x.png) no-repeat 0 0;
+    background-size: contain;
+    margin: auto; 
+  }
+  
+  .horizontal-nav {
+    margin: 25px 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .horizontal-nav a {
+    color: #000000;
+    text-decoration: none;
+
+  }
+  .main-container {
+    margin: 25px 20px;
+  }
+  .hero-image {
+    width:100%;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0px 20px;
+  }
+  .social-icon-container a img {
+height: 40px;
+width: 40px;
+  }
+  .social-icon-container a {
+    text-decoration: none;
+    text-align:center;
+  }
+
+  .social-icon-container {
+    text-align:center;
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .footer-link-container a {
+    text-decoration: none;
+    color:#000000;
+    padding-right: 10px;
+  }
+  .copyright-container a {
+    text-decoration: none;
+    color: black;
+  }
+  .follow-us-text {
+    color: black;
+  }
