@@ -3,11 +3,15 @@
     src: url("../fonts/Katibeh-Regular.ttf") format("truetype");
   }
   @font-face {
-    font-family: "Poppins";
+    font-family: "Poppins-reg";
     src: url("../fonts/Poppins-Regular.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "Poppins-light";
+    src: url("../fonts/Poppins-Light.ttf") format("truetype");
+  }
 body {
-    font-family: "Poppins"
+    font-family: "Poppins-light"
 }
 header {
     height: 140px;
@@ -21,7 +25,22 @@ h1 {
     font-size: 70px;
     font-weight: 100;
     margin-bottom: -33px
-    
+}
+h2 {
+    padding-bottom: 0px;
+    padding-top:0px;
+    font-family: "Poppins-reg";
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 10px
+}
+h3 {
+    padding-bottom: 0px;
+    padding-top:0px;
+    font-family: "Poppins-reg";
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 10pxß
 }
 header a.logo {
     transition: all 0.5s ease;
@@ -49,6 +68,7 @@ header a.logo {
   }
   .main-container {
     margin: 25px 20px;
+    display: flex;
   }
   .hero-image {
     width:100%;
@@ -89,7 +109,6 @@ width: 40px;
     text-decoration: none;
     color:#000000;
     padding-right: 10px;
-    
    
   }
  .copyright-container {
@@ -104,4 +123,43 @@ width: 40px;
   }
   .follow-us-text {
     color: black;
+  }
+  .author-highlight{
+    width:30%;
+    height: 530px;
+    overflow:scroll;
+    border-left: 1px solid black;
+    padding-left:15px;
+
+  }
+  .book-highlights{
+    width:70%;
+  }
+.grid-container{
+    display:grid;
+    column-gap:10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .column {
+    flex: 25%;
+    max-width: 23%;
+    padding: 5px 5px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    /* width: 100%; */
+  }
+  .grid-item {
+    /* width: 250px;
+    height:250px; */
+  }
+  .grid-image{
+    width: 150px;
+    height:200px; 
   }
