@@ -1,107 +1,216 @@
 @font-face {
-    font-family: "Katibeh";
-    src: url("../fonts/Katibeh-Regular.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
-  }
+  font-family: "katibeh";
+  src: url("../fonts/Katibeh-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins-reg";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins-light";
+  src: url("../fonts/Poppins-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins-medium";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
 body {
-    font-family: "Poppins"
+  font-family: "Poppins-light"
 }
 header {
-    height: 140px;
-    text-align: center;
-    margin: 20px; 
+  height: 140px;
+  text-align: center;
+  margin: 20px; 
 }
 h1 {
-    padding-bottom: 5px;
-    padding-top:20px;
-    font-family: "katibeh";
-    font-size: 70px;
-    font-weight: 100;
-    margin-bottom: -33px
-    
+  padding-bottom: 5px;
+  padding-top:20px;
+  font-family: "katibeh";
+  font-size: 70px;
+  font-weight: 100;
+  margin-bottom: -33px
 }
-header a.logo {
-    transition: all 0.5s ease;
-    display: block;
-    width: 170px;
-    height: 100px;
-    /* change dish-01.png to your loge image */
-    background: url(../images/Logo@3x.png) no-repeat 0 0;
-    background-size: contain;
-    margin: auto; 
-  }
-  
-  .horizontal-nav {
-    margin: 25px 20px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-evenly;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-  .horizontal-nav a {
-    color: #000000;
-    text-decoration: none;
+h2 {
+  padding-bottom: 0px;
+  padding-top:0px;
+  font-family: "Poppins-reg";
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 10px
+}
+h3 {
+  padding-bottom: 0px;
+  padding-top:0px;
+  font-family: "Poppins-reg";
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.p1 {
+  font-family: "poppins-reg";
+  font-size: 30px;
+}
+.p2 {
+  font-family: "poppins-light";
+  font-size: 20px;
+}
 
-  }
-  .main-container {
-    margin: 25px 20px;
-  }
-  .hero-image {
-    width:100%;
-  }
-  .footer-content {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-content: center;
-    margin: 0px 20px;
-  }
-  .social-icon-container a img {
+header a.logo {
+  transition: all 0.5s ease;
+  display: block;
+  width: 170px;
+  height: 100px;
+  /* change dish-01.png to your loge image */
+  background: url(../images/Logo@3x.png) no-repeat 0 0;
+  background-size: contain;
+  margin: auto; 
+}
+
+.horizontal-nav {
+  margin: 25px 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.horizontal-nav a {
+  color: #000000;
+  text-decoration: none;
+
+}
+.main-container {
+  margin: 25px 55px;
+  display: flex;
+}
+.hero-image {
+  width:100%;
+}
+.footer-content {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0px 20px;
+}
+.social-icon-container a img {
 height: 40px;
 width: 40px;
-  }
-  .social-icon-container a {
-    text-decoration: none;
-    text-align:center;
-  }
+}
+.social-icon-container a {
+  text-decoration: none;
+  text-align:center;
+}
 
-  .social-icon-container {
-    text-align:center;
-    /* position:relative; */
-    /* left: 0; */
-    /* right: 0; */
-    /* margin: 0 0 20px 0; */
-    /* width: 100%; */
-    padding-bottom: 20px;
-  
-    width: 30%;
-  }
-  .footer-link-container {
-    width: 30%;
-   
-    padding-top: 40px;
-  }
-  .footer-link-container a {
-    text-decoration: none;
-    color:#000000;
-    padding-right: 10px;
-    
-   
-  }
- .copyright-container {
-    width: 30%;
+.social-icon-container {
+  text-align:center;
+  /* position:relative; */
+  /* left: 0; */
+  /* right: 0; */
+  /* margin: 0 0 20px 0; */
+  /* width: 100%; */
+  padding-bottom: 20px;
+
+  width: 30%;
+}
+.footer-link-container {
+  width: 30%;
  
- }
-  .copyright-container a {
-    text-decoration: none;
-    color: black;
-    float: right;
-    padding-top: 40px;
-  }
-  .follow-us-text {
-    color: black;
-  }
+  padding-top: 40px;
+}
+.footer-link-container a {
+  text-decoration: none;
+  color:#000000;
+  padding-right: 10px;
+ 
+}
+.copyright-container {
+  width: 30%;
+
+}
+.copyright-container a {
+  text-decoration: none;
+  color: black;
+  float: right;
+  padding-top: 40px;
+}
+.follow-us-text {
+  color: black;
+}
+.author-highlight{
+  width:30%;
+  height: 530px;
+  overflow:scroll;
+  border-left: 1px solid black;
+  padding-left:15px;
+
+}
+.book-highlights{
+  width:70%;
+}
+.grid-container{
+  display:grid;
+  column-gap:10px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  max-width: 17.5%;
+  padding: 5px 5px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  /* width: 100%; */
+}
+.grid-item {
+  /* width: 250px;
+  height:250px; */
+}
+.grid-image {
+  width:150px;
+  height:200px; 
+}
+.currently-reading-left {
+  width: 50%;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+.currently-reading-right {
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+.currently-reading-book {
+  float: left;
+  max-width: 200px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+.about-the-author-container {
+border-top: 1px solid gray;
+}
+.name-and-photo {
+  width: 75%;
+  height:75px;
+  background-color: aqua;
+  display: inline-flex;
+  
+}
+.author-image {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+}
+.author-bio{
+  height: 530px;
+  overflow:scroll;
+}
