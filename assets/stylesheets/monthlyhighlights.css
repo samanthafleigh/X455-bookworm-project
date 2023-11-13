@@ -45,12 +45,13 @@ h3 {
 header a.logo {
     transition: all 0.5s ease;
     display: block;
-    width: 170px;
-    height: 100px;
+    width: 180px;
+    height: 50px;
     /* change dish-01.png to your loge image */
-    background: url(../images/Logo@3x.png) no-repeat 0 0;
+    background: url(../images/worm-logo.png) no-repeat 0 0;
     background-size: contain;
-    margin: auto; 
+    margin: auto;
+    margin-top:15px; 
   }
   
   .horizontal-nav {

@@ -28,7 +28,7 @@ h1 {
   font-family: "katibeh";
   font-size: 70px;
   font-weight: 100;
-  margin-bottom: -33px
+  margin-bottom: -33px;
 }
 h2 {
   padding-bottom: 0px;
@@ -42,7 +42,7 @@ h3 {
   padding-bottom: 0px;
   padding-top:0px;
   font-family: "Poppins-reg";
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 100;
   margin-bottom: 10px;
 }
@@ -58,12 +58,13 @@ h3 {
 header a.logo {
   transition: all 0.5s ease;
   display: block;
-  width: 170px;
-  height: 100px;
+  width: 180px;
+  height: 50px;
   /* change dish-01.png to your loge image */
-  background: url(../images/Logo@3x.png) no-repeat 0 0;
+  background: url(../images/worm-logo.png) no-repeat 0 0;
   background-size: contain;
   margin: auto; 
+  margin-top:15px; 
 }
 
 .horizontal-nav {
@@ -82,6 +83,7 @@ header a.logo {
 .main-container {
   margin: 25px 55px;
   display: flex;
+  flex-direction: column;
 }
 .hero-image {
   width:100%;
@@ -168,13 +170,21 @@ width: 40px;
   vertical-align: middle;
   /* width: 100%; */
 }
-.grid-item {
+/* .grid-item { */
   /* width: 250px;
   height:250px; */
-}
+/* } */
 .grid-image {
   width:150px;
   height:200px; 
+}
+.page-title {
+  Width: 100%;
+  padding-bottom: 20px;
+}
+.currently-reading-container {
+display: flex;
+flex-direction: row;
 }
 .currently-reading-left {
   width: 50%;
@@ -184,6 +194,213 @@ width: 40px;
 .currently-reading-right {
   width: 50%;
   padding-left: 20px;
+  padding-right: 20px;
+}
+.currently-reading-book {
+  float: left;
+  max-width: 200px;
+  padding-right: 15px;
+}
+.about-the-author-container {
+border-top: 1px solid gray;
+display: flex;
+flex-direction:column;
+}
+.name-and-photo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+.author-image {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+}
+.author-bio{
+  height: 530px;
+  overflow:scroll;
+}
+/* Accordion */
+.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: poppins-medium;
+  font-size: 20px;
+  transition: 0.4s;
+  height: 40px;
+}
+
+.active, .accordion:hover {
+  background-color: #ebeaea; 
+}
+.author-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+/* header and nav */
+@media only screen and (max-width: 600px) {
+  header {
+    height: 110px;
+  }
+  .horizontal-nav {
+     display: none;
+   }
+  .main-container {
+    border-top: 1px solid black;
+    padding-top: 30px;
+  }
+  header a.logo {
+    display: none;
+  }
+  h1 {
+    padding-top:65px;
+  }
+
+}
+
+/* Dropdown menu active */
+@media only screen and (max-width: 600px) {
+
+.dropdown {
+position: relative;
+display: block;
+width: auto;
+height: 25px;
+}
+.dropbtn {
+position: absolute;
+display: block;
+width: auto;
+height: 40px;
+border: none;
+cursor: pointer;
+}
+
+.dropdown-content {
+width: 100%;
+top: 52px;
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: #ffffff;
+}
+}
+/* dropdown menu hidden */
+@media only screen and (min-width: 600px) {
+
+.dropdown {
+  display: none;
+}
+.dropbtn {
+  display: none;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content a {
+  display: none;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
+}
+/* Currently Reading main section */
+@media only screen and (max-width: 600px) {
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 20px;
+}
+.author-highlight{
+  width:30%;
+  height: 530px;
+  overflow:scroll;
+  border-left: 1px solid black;
+  padding-left:15px;
+
+}
+.book-highlights{
+  width:70%;
+}
+.grid-container{
+  display:grid;
+  column-gap:10px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  max-width: 17.5%;
+  padding: 5px 5px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  /* width: 100%; */
+}
+/* .grid-item { */
+  /* width: 250px;
+  height:250px; */
+/* } */
+.grid-image {
+  width:150px;
+  height:200px; 
+}
+.currently-reading-left {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+.currently-reading-right {
+  width: 100%;
+  padding-left: 0px;
   padding-right: 20px;
   padding-top: 50px;
 }
@@ -213,4 +430,73 @@ border-top: 1px solid gray;
 .author-bio{
   height: 530px;
   overflow:scroll;
+}
+}
+/* Footer */
+@media only screen and (max-width: 400px) {
+  .footer-content {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0px 20px;
+    text-align: center;
+  }
+  .social-icon-container a img {
+    height: 40px;
+    width: 40px;
+  }
+  .social-icon-container a {
+    text-decoration: none;
+    text-align:center;
+    margin: auto;
+  }
+
+  .social-icon-container {
+    order: 1;
+    text-align:center;
+    /* position:relative; */
+    /* left: 0; */
+    /* right: 0; */
+    /* margin: 0 0 20px 0; */
+    /* width: 100%; */
+    padding-bottom: 10px;
+    margin: auto;
+    width: 50%;
+  }
+  .social-media-icons{
+    display:inline-flex;
+  }
+  .footer-link-container {
+    order: 2;
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top:0px;
+  }
+  .footer-link-container a {
+    text-decoration: none;
+    color:#000000;
+    padding-right: 10px;
+    
+   
+  }
+ .copyright-container {
+    order: 3;
+    width: 50%;
+    margin: auto;
+ 
+ }
+  .copyright-container a {
+    text-decoration: none;
+    color: black;
+    float: right;
+    padding-top: 0px;
+  }
+  .follow-us-text {
+    color: black;
+  }
+
 }
