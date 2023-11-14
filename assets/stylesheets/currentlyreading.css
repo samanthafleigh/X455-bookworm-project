@@ -81,7 +81,7 @@ header a.logo {
 
 }
 .main-container {
-  margin: 25px 55px;
+  margin: 25px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -268,7 +268,7 @@ flex-direction:column;
     display: none;
   }
   h1 {
-    padding-top:65px;
+    padding-top:40px;
   }
 
 }
@@ -349,88 +349,55 @@ background-color: #ffffff;
 }
 /* Currently Reading main section */
 @media only screen and (max-width: 600px) {
-.main-container {
+  .page-title {
+    Width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .currently-reading-container {
   display: flex;
   flex-direction: column;
-  margin: 25px 20px;
-}
-.author-highlight{
-  width:30%;
-  height: 530px;
-  overflow:scroll;
-  border-left: 1px solid black;
-  padding-left:15px;
-
-}
-.book-highlights{
-  width:70%;
-}
-.grid-container{
-  display:grid;
-  column-gap:10px;
-}
-.row {
+  }
+  .currently-reading-left {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+  .currently-reading-right {
+    /* display:flex; */
+    /* flex-direction: column; */
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 40px;
+  }
+  .currently-reading-book {
+    float: left;
+    max-width: 200px;
+    padding-right: 15px;
+  }
+  .about-the-author-container {
+  border-top: 1px solid gray;
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.column {
-  flex: 25%;
-  max-width: 17.5%;
-  padding: 5px 5px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  /* width: 100%; */
-}
-/* .grid-item { */
-  /* width: 250px;
-  height:250px; */
-/* } */
-.grid-image {
-  width:150px;
-  height:200px; 
-}
-.currently-reading-left {
-  width: 100%;
-  padding-left: 0px;
-  padding-right: 20px;
-}
-.currently-reading-right {
-  width: 100%;
-  padding-left: 0px;
-  padding-right: 20px;
-  padding-top: 50px;
-}
-.currently-reading-book {
-  float: left;
-  max-width: 200px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-}
-.about-the-author-container {
-border-top: 1px solid gray;
-}
-.name-and-photo {
-  width: 75%;
-  height:75px;
-  background-color: aqua;
-  display: inline-flex;
-  
-}
-.author-image {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  display: block;
-  overflow: hidden;
-}
-.author-bio{
-  height: 530px;
-  overflow:scroll;
-}
+  flex-direction:column;
+  }
+  .name-and-photo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .author-image {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+  }
+  .author-bio{
+    height: 530px;
+    overflow:scroll;
+  }
 }
 /* Footer */
 @media only screen and (max-width: 400px) {
